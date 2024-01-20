@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ../../
+      dockerfile: docker/dev/Dockerfile
+    ports:
+      - '3000:3000'
+    networks:
+      - api
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres
+    ports:
+      - '5432:5432'
+    networks:
+      - api
+
+networks:
+  api:

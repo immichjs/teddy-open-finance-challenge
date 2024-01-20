@@ -64,3 +64,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 ## Melhorias
 
 - Aplicaria arquitetura de microservices entre usuários, authenticação e encurtador. A maior dificuldade seria a construção do ambiente inicial e comunicação entre eles e conforme fosse crescendo em questão recursos, seriam criados novos serviços desacoplados e isolando possíveis bugs.
+
+## Observações
+
+A api já está em rodando cloud utilizando GCP com os serviços: Cloud Run e Cloud SQL: https://teddy-open-finance-api-m646j42wkq-ue.a.run.app/api
